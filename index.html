@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planner Studio — Route A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <h1>Planner Studio</h1>
+        <p>Route A — recipe-driven premium daily planner</p>
+      </div>
+      <div class="header-actions">
+        <button id="exportPngBtn" class="btn btn-secondary">Export PNG</button>
+        <button id="printPdfBtn" class="btn btn-primary">Print / Save PDF</button>
+      </div>
+    </header>
+
+    <div class="app-grid">
+      <aside class="control-panel">
+        <section class="card">
+          <h2>Inspiration Image</h2>
+          <label class="upload-box" for="imageInput">
+            <span>Upload inspiration image</span>
+            <small>Used only as a visual reference for you.</small>
+            <input type="file" id="imageInput" accept="image/*" />
+          </label>
+          <img id="inspirationPreview" alt="Inspiration preview" />
+        </section>
+
+        <section class="card">
+          <h2>Recipe Preset</h2>
+          <select id="recipeSelect">
+            <option value="desertA">Desert A</option>
+            <option value="desertB">Desert B</option>
+            <option value="desertBlend">Desert Blend</option>
+          </select>
+          <button id="loadPresetBtn" class="btn btn-secondary full">Load Preset</button>
+        </section>
+
+        <section class="card">
+          <h2>Recipe JSON</h2>
+          <textarea id="recipeEditor" spellcheck="false"></textarea>
+          <button id="generateBtn" class="btn btn-primary full">Generate Planner</button>
+        </section>
+      </aside>
+
+      <main class="preview-wrap">
+        <div id="plannerPage" class="planner-page"></div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="recipes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
