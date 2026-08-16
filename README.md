@@ -1,21 +1,15 @@
-# Planner Studio — Route A
+# Planner Studio — Route A v2
 
-This is a fresh start.
+This version fixes the two things we agreed to fix first:
 
-## What this version is
-A simple single-page Daily Planner app that uses a manual recipe instead of fake image guessing.
+- **PDF export is one US Letter page** with no Safari browser header/footer.
+- **Desert motifs are redrawn** with a softer, more organic cactus, sun, and dune system.
 
-## Files
-- index.html
-- style.css
-- recipes.js
-- app.js
+## Files to upload to the new repository
+- `index.html`
+- `style.css`
+- `recipes.js`
+- `app.js`
 
-## What to do
-1. Create a new GitHub repository
-2. Upload these 4 files
-3. Turn on GitHub Pages
-4. Open the site
-5. Use the Desert Blend recipe
-6. Upload your inspiration image only as a visual reference
-7. Click Generate Planner
+## Test
+Open the site and use **Desert Blend**. Export with the new **Export PDF** button, not Safari Print.

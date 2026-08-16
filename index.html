@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Planner Studio — Route A</title>
+  <title>Planner Studio — Route A v2</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,11 +14,11 @@
     <header class="app-header">
       <div>
         <h1>Planner Studio</h1>
-        <p>Route A — recipe-driven premium daily planner</p>
+        <p>Route A v2 — refined desert daily planner</p>
       </div>
       <div class="header-actions">
         <button id="exportPngBtn" class="btn btn-secondary">Export PNG</button>
-        <button id="printPdfBtn" class="btn btn-primary">Print / Save PDF</button>
+        <button id="exportPdfBtn" class="btn btn-primary">Export PDF</button>
       </div>
     </header>
 
@@ -28,7 +28,7 @@
           <h2>Inspiration Image</h2>
           <label class="upload-box" for="imageInput">
             <span>Upload inspiration image</span>
-            <small>Used only as a visual reference for you.</small>
+            <small>Visual reference only for Route A.</small>
             <input type="file" id="imageInput" accept="image/*" />
           </label>
           <img id="inspirationPreview" alt="Inspiration preview" />
@@ -58,6 +58,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
   <script src="recipes.js"></script>
   <script src="app.js"></script>
 </body>
